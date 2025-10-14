@@ -1,4 +1,7 @@
-.images {
- max-width: 100%;
-}
+<style>
 
+ .title: {
+   background-color: green;
+ }
+
+</style>
