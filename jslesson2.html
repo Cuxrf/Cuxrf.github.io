@@ -17,11 +17,29 @@ document.writeln("<h2 style='color:blue;'>I'm bluee" + " (I think)</h2>");
 function promptFunction() {
  var studentid;
   studentid = window.prompt("enter your STUDENT ID");
-  document.write ("<h2>Henloo  " + studentid + "how are yaa?")
+document.write("<h2>Henloo  " + studentid + "  how are yaa?</h2>");
+  document.getElementById("OutcomePrompt").innerHTML = txt;
 }
 
+function confirmornot() {
+  var txt;
+  var r = confirm("You stink yes or no?");
+  if (r == true) {
+  txt = ("You stink...");
+} else {
+  txt = ("Yes you are lol");
+}
+  document.getElementById("OutcomeConfirm").innerHTML = txt;
+}
+
+
 </script>
-    <button onclick="fireAlert()">FIRE ALERTTTTTTTTTTTT</button>             <button onclick="promptFunction()">Window Prompt</button>
+    <button onclick="fireAlert()">FIRE ALERTTTTTTTTTTTT</button>  
+    <button onclick="confirmornot()">Confirmation</button>    
+    <button onclick="promptFunction()">Window Prompt</button>
+    <p id="outputConfirm"></p>
+      <p id="outputPrompt"></p>
+
 
 </body>
   
